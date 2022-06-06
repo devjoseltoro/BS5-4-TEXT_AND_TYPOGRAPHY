@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS5 GRID BASIC</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background: #ffe259;
+            background: linear-gradient(to right, #ffa751, #ffe259);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-center p-2">
+        <img src="img/blogger.png" width="32" alt="">
+        <img src="img/dev.png" width="32" alt="">
+        <img src="img/dcoder.png" width="32" alt="">
+        <img src="img/github.png" width="32" alt="">
+        <img src="img/gumroad.png" width="32" alt="">
+        <img src="img/youtube.png" width="32" alt="">
+        <img src="img/twitter.png" width="32" alt="">
+        <img src="img/facebook.png" width="32" alt="">
+        <img src="img/instagram.png" width="32" alt="">
+        <img src="img/tiktok.png" width="32" alt="">
+        <br>
+        <span class="mt-5"> @joseltoro</span>
+    </div>
+
+    <!-- E{ncabezados normales -->
+    <div class="container mt-3">
+        <h1 class="text-success">Encabezados normales</h1>
+        <p>El tamaño de fuente de cada encabezado de Bootstrap depende del tamaño de la pantalla. Intente cambiar el
+            tamaño de la ventana del navegador para ver el efecto.</p>
+        <h1>h1 Bootstrap heading</h1>
+        <h2>h2 Bootstrap heading</h2>
+        <h3>h3 Bootstrap heading</h3>
+        <h4>h4 Bootstrap heading</h4>
+        <h5>h5 Bootstrap heading</h5>
+        <h6>h6 Bootstrap heading</h6>
+    </div>
+
+    <div class="container mt-3">
+        <p>También puede usar clases .h1 a .h6 en otros elementos para que se comporten como encabezados si lo desea:</p>
+        <p class="h1">h1 Bootstrap heading</p>
+        <p class="h2">h2 Bootstrap heading</p>
+        <p class="h3">h3 Bootstrap heading</p>
+        <p class="h4">h4 Bootstrap heading</p>
+        <p class="h5">h5 Bootstrap heading</p>
+        <p class="h6">h6 Bootstrap heading</p>
+     </div>
+
+    <!-- Encabezados de visualización -->
+    <div class="container mt-3">
+        <h1 class="text-success">Encabezados de visualización</h1>
+        <p>Los encabezados de visualización se utilizan para destacar más que los encabezados normales (tamaño de fuente más grande y peso de fuente más ligero):</p>
+        <h1 class="display-1">Display 1</h1>
+        <h1 class="display-2">Display 2</h1>
+        <h1 class="display-3">Display 3</h1>
+        <h1 class="display-4">Display 4</h1>
+        <h1 class="display-5">Display 5</h1>
+        <h1 class="display-6">Display 6</h1>
+    </div>
+
+    <!-- Texto secundario más pequeño -->
+    <div class="container mt-3">
+        <h1 class="text-success">Texto secundario más pequeño</h1>
+        <p>El elemento small (y la clase .small) se usa para crear un texto secundario más pequeño en cualquier encabezado:</p>       
+        <h1>h1 heading <small>secondary text</small></h1>
+        <h2>h2 heading <small>secondary text</small></h2>
+        <h3>h3 heading <small>secondary text</small></h3>
+        <h4>h4 heading <small>secondary text</small></h4>
+        <h5>h5 heading <small>secondary text</small></h5>
+        <h6>h6 heading <small>secondary text</small></h6>
+    </div>
+
+    <!-- Resaltar texto -->
+    <div class="container mt-3">
+        <h1 class="text-success">Resaltar texto</h1>    
+        <p>Utilice el elemento mark (o la clase .mark) para <mark>resaltar</mark> un texto.</p>
+    </div>
+
+    <!-- Marcar acrónimo -->
+    <div class="container mt-3">
+        <h1 class="text-success">Marcar acrónimo</h1>
+        <p>El elemento abbr se utiliza para marcar una abreviatura o un acrónimo:</p>
+        <p>La <abbr title="Organización Mundial de la Salud (World Health Organization)">WHO</abbr> fue fundado en 1948.</p>
+    </div>
+
+    <!-- Citar contenido -->
+    <div class="container mt-3">
+        <h1 class="text-success">Citar contenido</h1>
+        <p>El elemento blockquote se usa para presentar contenido de otra fuente:</p>
+        <blockquote class="blockquote">
+          <p>Durante 50 años, WWF ha estado protegiendo el futuro de la naturaleza. WWF, la organización de conservación líder en el mundo, trabaja en 100 países y cuenta con el apoyo de 1,2 millones de miembros en los Estados Unidos y cerca de 5 millones en todo el mundo.</p>
+          <footer class="blockquote-footer">Del sitio web de WWF</footer>
+        </blockquote>
+    </div>
+
+    <!-- Listas de descripción -->
+    <div class="container mt-3">
+        <h1 class="text-success">Listas de descripción</h1>    
+        <p>El elemento dl indica una lista de descripción:</p>
+        <dl>
+          <dt>Café</dt>
+          <dd>- bebida caliente negra</dd>
+          <dt>Leche</dt>
+          <dd>- bebida fría blanca</dd>
+        </dl>     
+    </div>
+
+    <!-- Fragmentos de código -->
+    <div class="container mt-3">
+        <h1 class="text-success">Fragmentos de código</h1>
+        <p>Los fragmentos de código en línea deben estar incrustados en el elemento de código:</p>
+        <p>Los siguientes elementos HTML: <code>span</code>, <code>section</code>, y <code>div</code> definen una sección en un documento.</p>
+    </div>
+
+    <!-- Entradas de teclado -->
+    <div class="container mt-3">
+        <h1 class="text-success">Entradas de teclado</h1>
+        <p>Para indicar la entrada que normalmente se ingresa a través del teclado, use el elemento kbd:</p>
+        <p>Presione <kbd>ctrl + p</kbd> para abrir la ventana Imprimir.</p>
+    </div>
+
+    <!-- Varias líneas de código -->
+    <div class="container mt-3">
+        <h1 class="text-success">Varias líneas de código</h1>
+        <p>Para varias líneas de código, use el elemento pre:</p>
+        <pre>
+El texto en un elemento pre
+se muestra en un ancho fijo
+fuente, y conserva
+ambos espacios y
+saltos de línea.
+        </pre>
+    </div>
+
+    <!-- Más clases de tipografía -->
+    <div class="container mt-3">
+        <h1 class="text-success">Más clases de tipografía</h2>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Tipografía</h2>
+        <p>Use la clase .lead para hacer que un párrafo "se destaque":</p>
+        <p class="lead">Destaca este párrafo.</p>
+        <p>Este es un párrafo normal.</p>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Tipografía</h2>
+        <p class="text-start">Texto alineado a la izquierda.</p>
+        <p class="text-end">Texto alineado a la derecha.</p>      
+        <p class="text-center">Texto alineado al centro.</p>
+        <p class="text-nowrap">Sin texto de ajuste. Sin texto de ajuste. Sin texto de ajuste. Sin texto de ajuste.</p>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Tipografía</h2>
+        <p class="text-lowercase">Texto en minúsculas.</p>
+        <p class="text-uppercase">Texto en mayúsculas.</p>      
+        <p class="text-capitalize">Texto capitalizado.</p>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Salto de texto / Salto de palabra</h2>
+        <p>La clase .text-break evita que el texto largo rompa el diseño.</p>
+        <p>Con .text-break:</p>
+        <p class="text-break">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+        <p>Sin .text-break:</p>
+        <p>AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Decoración de texto</h2>
+        <p>Use la clase .text-decoration-none para eliminar el subrayado de un enlace.</p>
+        <a href="#" class="text-decoration-none">Un enlace sin subrayar.</a>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Tipografía</h2>
+        <p>La <abbr title="World Health Organization">WHO</abbr> fue fundado en 1948. (normal abbr)</p>      
+        <p>La <abbr title="World Health Organization" class="initialism">WHO</abbr> fue fundado en 1948. (abbr ligeramente más pequeña)</p>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Tipografía</h2>
+        <p>La clase .list-unstyled elimina el estilo de lista predeterminado y el margen izquierdo en los elementos de la lista (solo elementos secundarios inmediatos):</p>
+        <ul class="list-unstyled">
+          <li>Café</li>
+          <li>Té
+            <ul>
+              <li>Té negro</li>
+              <li>Té verde</li>
+            </ul>
+          </li>
+          <li>Leche</li>
+        </ul>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Tipografía</h2>
+        <p>La clase .list-inline coloca todos los elementos de la lista en una sola línea, cuando se usa junto con .list-inline-item:</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">Café</li>
+          <li class="list-inline-item">Té</li>
+          <li class="list-inline-item">Leche</li>
+        </ul>
+    </div>
+</body>
+</html>
