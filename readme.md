@@ -1,6 +1,6 @@
 [![](captura.png)](captura.png "Captura de Pantalla")
 
-# Bootstrap 5 | Default Settings
+# Bootstrap 5 | Text/Typography
 
 📒 Bootstrap 5 usa un tamaño de fuente predeterminado de 1 rem (16 px por defecto) y su altura de línea es 1.5.
 
