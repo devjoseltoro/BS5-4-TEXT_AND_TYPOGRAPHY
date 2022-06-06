@@ -1,82 +1,124 @@
-Bootstrap 5 | GRID BASIC
+Bootstrap 5 | Text/Typography
 _________________________________
 
-📒 Sistema de cuadrícula Bootstrap 5
+📒 Bootstrap 5 usa un tamaño de fuente predeterminado de 1 rem (16 px por defecto) y su altura de línea es 1.5.
 
-    📝 El sistema de cuadrícula de Bootstrap está construido con flexbox y permite hasta 12 columnas en la página.
-    📝 Si no desea usar las 12 columnas individualmente, puede agrupar las columnas para crear columnas más anchas:
-    📝 El sistema de cuadrícula responde y las columnas se reorganizarán automáticamente según el tamaño de la pantalla.
-    📝 Asegúrese de que la suma sume 12 o menos (no es necesario que use las 12 columnas disponibles).
+📒 Además, todos los elementos p tienen margin-top: 0 y margin-bottom: 1rem (16px por defecto).
 
-📒 Clases de cuadrícula
+📒 Encabezados normales
 
-    📝 El sistema de cuadrícula Bootstrap 5 tiene seis clases:
+    📝 Bootstrap 5 diseña encabezados HTML (<h1> a <h6>) con un peso de fuente más audaz y un tamaño de fuente receptivo.
 
-        🔸 .col- (dispositivos extra pequeños - ancho de pantalla inferior a 576 px)
-        🔸 .col-sm- (dispositivos pequeños - ancho de pantalla igual o mayor a 576px)
-        🔸 .col-md- (dispositivos medianos - ancho de pantalla igual o mayor a 768px)
-        🔸 .col-lg- (dispositivos grandes - ancho de pantalla igual o mayor a 992px)
-        🔸 .col-xl- (dispositivos extragrandes - ancho de pantalla igual o superior a 1200 px)
-        🔸 .col-xxl- (dispositivos extra extra grandes - ancho de pantalla igual o mayor a 1400px)
+    <h1>h1 Bootstrap heading</h1>
+    <h2>h2 Bootstrap heading</h2>
+    <h3>h3 Bootstrap heading</h3>
+    <h4>h4 Bootstrap heading</h4>
+    <h5>h5 Bootstrap heading</h5>
+    <h6>h6 Bootstrap heading</h6>
 
-    📝 Las clases anteriores se pueden combinar para crear diseños más dinámicos y flexibles.
-    📝 Sugerencia: cada clase se amplía, por lo que si desea establecer los mismos anchos para sm y md, solo necesita especificar sm.
+    📝También puede usar las clases .h1 a .h6 en otros elementos para que se comporten como encabezados si lo desea:
 
-📒 Estructura básica de una cuadrícula Bootstrap 5
-
-    📝 La siguiente es una estructura básica de una cuadrícula de Bootstrap 5:
-
-        <!-- Controle el ancho de la columna y cómo deben aparecer en diferentes dispositivos -->
-        <div class="row">
-            <div class="col-*-*"></div>
-            <div class="col-*-*"></div>
-        </div>
-        <div class="row">
-            <div class="col-*-*"></div>
-            <div class="col-*-*"></div>
-            <div class="col-*-*"></div>
-        </div>
-
-        <!-- O deja que Bootstrap maneje automáticamente el diseño -->
-        <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-        </div>
-
-
-    📝 Primer ejemplo: crea una fila (<div class="row">). Luego, agregue el número deseado de columnas (etiquetas con las clases .col-*-* apropiadas). La primera estrella (*) representa la capacidad de respuesta: sm, md, lg, xl o xxl, mientras que la segunda estrella representa un número, que debe sumar 12 para cada fila.
-    📝 Segundo ejemplo: en lugar de agregar un número a cada columna, deje que Bootstrap maneje el diseño para crear columnas de igual ancho: dos elementos "col" = 50% de ancho para cada columna, mientras que tres columnas = 33.33% de ancho para cada columna. Cuatro columnas = 25% de ancho, etc. También puede usar .col-sm|md|lg|xl|xxl para hacer que las columnas respondan.
-
-
-📒 Ejercicios
-
-    📝 Tres columnas iguales
-    
-        El siguiente ejemplo muestra cómo crear tres columnas de igual ancho, en todos los dispositivos y anchos de pantalla:
+    <p class="h1">h1 Bootstrap heading</p>
+    <p class="h2">h2 Bootstrap heading</p>
+    <p class="h3">h3 Bootstrap heading</p>
+    <p class="h4">h4 Bootstrap heading</p>
+    <p class="h5">h5 Bootstrap heading</p>
+    <p class="h6">h6 Bootstrap heading</p>
         
-        <div class="row">
-            <div class="col">.col</div>
-            <div class="col">.col</div>
-            <div class="col">.col</div>
-        </div>
+📒 Encabezados de visualización
 
-    📝 Columnas responsivas
-    
-        El siguiente ejemplo muestra cómo crear cuatro columnas de igual ancho comenzando en tabletas y escalando a escritorios extra grandes. En teléfonos móviles o pantallas de menos de 576 px de ancho, las columnas se apilarán automáticamente una encima de la otra:
+    📝Los encabezados de visualización se utilizan para resaltar más que los encabezados normales (tamaño de fuente más grande y peso de fuente más ligero), y hay seis clases para elegir: .display-1 a .display-6:
 
-        <div class="row">
-            <div class="col-sm-3">.col-sm-3</div>
-            <div class="col-sm-3">.col-sm-3</div>
-            <div class="col-sm-3">.col-sm-3</div>
-            <div class="col-sm-3">.col-sm-3</div>
-        </div>
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+    <h1 class="display-5">Display 5</h1>
+    <h1 class="display-6">Display 6</h1>
 
-     📝 Dos columnas responsivas desiguales
+📒 Texto secundario más pequeño
 
-        El siguiente ejemplo muestra cómo obtener dos columnas de varios anchos comenzando en tabletas y escalando a grandes escritorios adicionales:
-        
-        <div class="row">
-            <div class="col-sm-4">.col-sm-4</div>
-            <div class="col-sm-8">.col-sm-8</div>
-        </div>
+    📝 En Bootstrap 5, el elemento HTML <small> (y la clase .small) se usan para crear un texto secundario más pequeño en cualquier encabezado:
+
+    <h1>h1 heading <small>secondary text</small></h1>
+    <h2>h2 heading <small>secondary text</small></h2>
+    <h3>h3 heading <small>secondary text</small></h3>
+    <h4>h4 heading <small>secondary text</small></h4>
+    <h5>h5 heading <small>secondary text</small></h5>
+    <h6>h6 heading <small>secondary text</small></h6>
+
+📒 Resaltar texto
+
+    📝Bootstrap 5 diseñará <mark> y .mark con un color de fondo amarillo y algo de relleno:    
+
+    <p>Utilice el elemento mark (o la clase .mark) para <mark>resaltar</mark> un texto.</p>
+
+📒 Abrebiar texto
+
+    📝Bootstrap 5 diseñará el elemento HTML <abbr> con un borde inferior punteado y un cursor con un signo de interrogación al pasar el mouse:
+
+    <p>La <abbr title="World Health Organization">WHO</abbr> fue fundado en 1948.</p>
+
+📒 Citar contenido
+
+    📝Agregue la clase .blockquote a <blockquote> cuando cite bloques de contenido de otra fuente. Y al nombrar una fuente, como "del sitio web de WWF", use la clase .blockquote-footer:
+
+    <blockquote class="blockquote">
+        <p>Durante 50 años, WWF ha estado protegiendo el futuro de la naturaleza. WWF, la organización de conservación líder en el mundo, trabaja en 100 países y cuenta con el apoyo de 1,2 millones de miembros en los Estados Unidos y cerca de 5 millones en todo el mundo.</p>
+        <footer class="blockquote-footer">Del sitio web de WWF</footer>
+    </blockquote>
+
+📒 Listas de descripción
+
+    📝Bootstrap 5 diseñará el elemento HTML <dl> de la siguiente manera:
+
+    p>El elemento dl indica una lista de descripción:</p>
+    <dl>
+        <dt>Café</dt>
+        <dd>- bebida caliente negra</dd>
+        <dt>Leche</dt>
+        <dd>- bebida fría blanca</dd>
+    </dl>    
+
+📒 Fragmentos de código
+
+    📝Bootstrap 5 diseñará el elemento HTML <code> de la siguiente manera:
+
+    <p>Los siguientes elementos HTML: <code>span</code>, <code>section</code>, y <code>div</code> definen una sección en un documento.</p>
+
+📒 Entradas de teclado
+
+    📝Bootstrap 5 diseñará el elemento HTML <kbd> de la siguiente manera:
+
+    <p>Presione <kbd>ctrl + p</kbd> para abrir la ventana Imprimir.</p>
+
+
+📒 Varias líneas de código
+
+    📝 Bootstrap 5 diseñará el elemento HTML <pre> de la siguiente manera:
+
+    <pre>
+        El texto en un elemento pre
+        se muestra en un ancho fijo
+        fuente, y conserva
+        ambos espacios y
+        saltos de línea.
+    </pre>
+
+📒 Más clases de tipografía
+
+    📝Las siguientes clases de Bootstrap 5 se pueden agregar para diseñar más elementos HTML:
+
+        🔸 .lead: hace que un párrafo se destaque
+        🔸 .text-start: Indica texto alineado a la izquierda
+        🔸 .text-center: Indica texto alineado al centro
+        🔸 .text-end: Indica texto alineado a la derecha
+        🔸 .text-nowrap: Indica que no hay texto de ajuste
+        🔸 .text-lowercase: Indica texto en minúsculas
+        🔸 .text-uppercase: Indica texto en mayúsculas
+        🔸 .text-capitalize: Indica texto en mayúscula
+        🔸 .text-break: Evita que el texto largo rompa el diseño
+        🔸 .text-decoration-none: Elimina el subrayado de un enlace
+        🔸 .initialism: Muestra el texto dentro de un elemento <abbr> en un tamaño de fuente ligeramente más pequeño
+        🔸 .list-unstyled: Elimina el estilo de lista predeterminado y el margen izquierdo de los elementos de la lista (funciona tanto en <ul> como en <ol>). Esta clase solo se aplica a los elementos de la lista de elementos secundarios inmediatos (para eliminar el estilo de lista predeterminado de cualquier lista anidada, aplique esta clase también a cualquier lista anidada)
+        🔸 .list-inline: Coloca todos los elementos de la lista en una sola línea (se usa junto con .list-inline-item en cada elemento <li>)
